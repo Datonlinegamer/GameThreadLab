@@ -4,6 +4,7 @@
 #include <print>
 #include <iostream>
 
+#define LOG(x) std::cout << x << std::endl;
 int main()
 {
     EnemyAI AI;
@@ -24,11 +25,7 @@ int main()
 
             for (auto& enemy : AI.GetEnemies())
             {
-                std::cout << "[GAME] Enemy "
-                    << enemy.id
-                    << " decision = "
-                    << enemy.decision
-                    << std::endl;
+                LOG( "[GAME] Enemy " << enemy.id << " decision = "<< enemy.decision);
             }
         }
 
