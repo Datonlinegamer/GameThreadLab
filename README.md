@@ -7,7 +7,8 @@ It demonstrates how to separate a game thread from worker threads (AI) using sta
 
 This project is intentionally minimal and engine agnostic, making it ideal for learning and experimentation.
 
-<img width="1635" height="736" alt="image" src="https://github.com/user-attachments/assets/add4b2b3-44dc-4e76-9d06-7540c0b78544" />
+
+<img width="815" height="330" alt="console" src="https://github.com/user-attachments/assets/64010086-b9c8-4c9c-aa27-8d335b21884a" />
 
 
 
