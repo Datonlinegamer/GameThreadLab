@@ -12,7 +12,7 @@ This project is intentionally minimal and engine agnostic, making it ideal for l
 
 
 
-🥅 Project Goals
+-Project Goals
 
 Learn safe multithreading in C++
 
@@ -24,7 +24,7 @@ Practice mutex discipline and thread lifetime management
 
 Build foundations for future systems like job systems and async tasks
 
-🧠 What This Project Simulates
+- What This Project Simulates
 
 Main Thread (Game Loop)
 
@@ -44,7 +44,7 @@ Never performs rendering or logging
 
 This mirrors how real engines ( Unreal Engine) separate gameplay logic from background work.
 
-🧩 Core Concepts Demonstrated
+- Core Concepts Demonstrated
 
 std::thread for worker execution
 
@@ -56,7 +56,7 @@ Short, scoped locking (no long mutex holds)
 
 Clear ownership between systems
 
-🗂️ High-Level Structure
+-High-Level Structure
 
 Enemy
 
@@ -78,7 +78,7 @@ Reads AI results
 
 Outputs game state
 
-▶️ How It Works
+- How It Works
 
 The game creates several enemies
 
@@ -92,7 +92,7 @@ The program shuts down cleanly by signaling the worker thread
 
 All shared access is synchronized safely.
 
-🛠️ Build Notes
+- Build Notes
 
 Written in standard C++ (C++17+ recommended)
 
@@ -102,7 +102,7 @@ No engine or external dependencies
 
 Tested with Visual Studio (Windows)
 
-💡  Design Decisions
+-  Design Decisions
 
 No logging from worker threads
 Console I/O is slow and synchronized internally. In real engines, only the main thread handles logging.
@@ -110,7 +110,7 @@ Console I/O is slow and synchronized internally. In real engines, only the main 
 Simple mutex-based synchronization
 Chosen for clarity and correctness before introducing more advanced techniques.
 
-📚 What I Learned
+- What I Learned
 
 Through building GameThreadLab, I learned several core principles of multithreaded game development:
 
@@ -134,7 +134,7 @@ Building a simple, correct model first makes it easier to evolve toward job syst
 
 These lessons mirror real-world engine patterns and form the foundation for advanced systems like job schedulers, async tasks, and parallel gameplay systems.
 
-🚀 Possible Next Steps
+- Possible Next Steps
 
 This project is designed to grow. Potential extensions include:
 
@@ -148,13 +148,13 @@ Command buffers (AI → game thread)
 
 Unreal-style async task architecture
 
-🤷🏾‍♀️ Why This Exists
+- Why This Exists
 
 Multithreading bugs are some of the hardest to diagnose in game development.
 GameThreadLab focuses on correct mental models first, before optimization or complexity.
 
 If you understand this project, you understand the core of real-world game threading.
 
-👩🏾‍💻 Author
+- Author
 
 Built as a hands on learning project for understanding C++ multithreading in a game development context.
