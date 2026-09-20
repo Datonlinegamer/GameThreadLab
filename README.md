@@ -3,7 +3,7 @@
 GameThreadLab
 
 GameThreadLab is a C++ multithreading learning project focused on game development patterns.
-It demonstrates how to separate a game thread from worker threads (AI) using standard C++ concurrency tools, following architecture patterns used in real game engines.
+
 
 This project is intentionally minimal and engine agnostic, making it ideal for learning and experimentation.
 
@@ -42,7 +42,7 @@ Writes results to shared data
 
 Never performs rendering or logging
 
-This mirrors how real engines (e.g. Unreal Engine) separate gameplay logic from background work.
+This mirrors how real engines ( Unreal Engine) separate gameplay logic from background work.
 
 🧩 Core Concepts Demonstrated
 
